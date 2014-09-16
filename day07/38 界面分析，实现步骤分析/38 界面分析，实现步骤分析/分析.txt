@@ -1,0 +1,13 @@
+model
+   1，数据：我说的话，好友发过来的话
+   2，我说的话来自view,交给PrivateChatBiz.sendMessage
+        好友发过来的话来自openfire,通过PrivateChatListener
+  3,PrivateChatBiz,Listener
+View
+   1,private_chat.xml
+   2,PrivateChatActivity
+   3,FriendListActivity.listview.onItemClickListener发出一个intent,带的是好友名称
+   4，说的话的显示，linearLayout.addView(view)
+好友过来的话，发广播
+
+   

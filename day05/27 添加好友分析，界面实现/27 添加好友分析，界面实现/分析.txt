@@ -1,0 +1,11 @@
+model
+  1,数据是username,name,group
+  2,来之view, 交给openfire
+  3,AddFriendBiz.addFriend(username,name,group)
+  { 调asmack api,发广播}
+view
+  addfriend.xml
+ AddFrientActivity extends BaseActivity
+ GroupListFragment 添加好友按钮发出一个intent,不要带数据
+ 
+发广播

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+       android:background="@drawable/title_bg_blue"
+        >
+
+        <Button
+            android:id="@+id/btn_group_chat_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+android:layout_centerVertical="true"   
+android:background="@drawable/button_back_selector"      
+  android:text="返回" />
+
+        <TextView
+            android:id="@+id/tv_group_chat_roomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_alignParentLeft="true"
+android:background="@drawable/title_bg_blue"
+         >
+
+        <Button
+            android:background="@drawable/button_sendmessage_selector"
+            android:id="@+id/btn_group_chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/et_group_chat_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            
+            android:layout_toLeftOf="@id/btn_group_chat_send" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:layout_alignParentLeft="true"
+        android:background="@color/background"
+        >
+
+        <ScrollView
+            android:id="@+id/scrollView_group_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+        >
+
+            <LinearLayout
+                android:id="@+id/linearLayout_group_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

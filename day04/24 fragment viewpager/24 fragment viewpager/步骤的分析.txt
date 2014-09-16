@@ -1,0 +1,12 @@
+1,main.xml
+   viewPager
+  四个button放到一个LinearLayout
+2,MainActivity extends FragmentActivity
+3,四个layout.xml
+4,GroupListFragment
+GroupChatFragment
+TopicFragment
+MoreFragment
+ 5,viewPager的内容是四个fragment
+viewpager.setAdapter(FragmentPagerAdapter)
+6,viewpager，button单击事件

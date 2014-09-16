@@ -1,0 +1,14 @@
+model
+   1数据：好友分类名称
+   2，来之openfire,通过Listener
+   3,  GroupListListener,得好ArrayList
+view
+   grounlist.xml
+   GroupListFragment
+   MainActivity.viewPager加载GroupListFragment
+  ListView
+  GroupListAdatper viewHolder
+发广播
+   GroupListReceiver写在GroupListFragment
+   GroupListListener 发广播
+ 
