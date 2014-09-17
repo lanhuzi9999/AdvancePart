@@ -1,0 +1,22 @@
+周日，你的作业，下周一晚上，本地两个班长和组长，演示
+1,
+图片 base64-->string 
+string=[!--image]+string
+ message.body=string
+
+好友收到后
+String.contains("[!--image]")
+String-->base64-->byte[]-->bitmap-->left.xml加上imageView 
+left.xml中有一个linearLayout.addView()
+
+2,语音，用真机录音
+
+服务器用公网124.207.192.18/172.60.5.100
+用真机的浏览器访问ip:9090,
+回到家里，用自由的笔记本，笔记本和手机都必须用wifi
+
+先用A用户登录发图片，再用B登录一上线就能收到消息
+[!--image]  [!--video]  [!--text]
+两个用户都必须用Android客户端
+
+2，发图片发到服务器上，得图片url
