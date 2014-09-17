@@ -1,2 +1,0 @@
-功能：下载书本，联网查单词，背单词
-技术：使用是N层框架，分view,controller,service,model,network,parser,dao,adapter,util,exception。view发消息给controller,在server中启动线程联网，数据解析完之后发个消息给controller.使用了IOC,用到了工厂设计模式。使用了webView,实现用javaScript调用Android打电话，使用div+css保证webView显示的网页能适应不同的手机屏幕。在webView中使用了自定义标注签，在webViewClient的shouldOverrideUrlLoading中对自定义标签进行处理，使用server+asyncTask进行多线程异步下载，为了防止手机断电，下载数据保存到Sqlite中。通过ListView显示下载进度。为了提高数据库查询速度，提前对数据进行group by ,order by,放到新表中。为了让界面快速的显示出度，在onCreate中用工作线程去加载数据。使用了自定义控件。使用了popupWinow,ExpandleListView,TabHost,ProgressDialog,ListView等控件，使用了.9图片和secletor.项目发布前进行签名，使用了proguard.
