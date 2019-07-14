@@ -1,9 +1,0 @@
-model
-   1,数据是聊天室名称
-   2，来之view ,交给openfire
-   3,GroupChatBiz,join(roomname,name)
-view
-    groupChat.xml-->inputRoom
-    groupChatFragment-->InputRoomFragment
-    
-发广播

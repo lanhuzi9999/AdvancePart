@@ -1,6 +1,0 @@
-asmack将一个聊天框架
-框架：1，常用功能：连接（网络状态判断，重连，加密，认证，压缩），传输，实体类，日志，异常，
-         2，必须让别人在上面扩展，增加自己的代码，必须有接口，以及对接口调用
-
-asmack 1，实现了socket,Login,实体类Message,Roster
-             2, 用PacketInterceptor,PacketListener进行扩展
